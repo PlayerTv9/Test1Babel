@@ -6,6 +6,9 @@ app.use(bodyParser.json());
 app.get('/',(req,res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 })
+app.get('/home',(req,res) => {
+    res.sendFile(path.join(__dirname, '/index.html'));
+})
 app.get('/cane',(req,res) => {
     res.sendFile(path.join(__dirname, '/cane.html'));
 })
